@@ -15,4 +15,5 @@ code {
 * {
   min-width: 576px;
   max-width: 720px;
+  background-color: black;
 }
