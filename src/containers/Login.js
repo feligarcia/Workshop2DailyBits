@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import Logo from '../assets/images/Logo.png'
 import { Link } from "react-router-dom";
+import getData from '../components/getData';
+import { url } from '../helpers/url';
 
 export const DivLogin = styled.div`
 display:flex;
@@ -40,9 +42,41 @@ color: white;
 
 
 function Login() {
-// const userlocal = JSON.parse(localStorage.getItem('User'))
-// const [user, setUser] = useState();
 
+const [user, setUser] = useState({
+  email:'',
+  password:''
+});
+
+const handleInputChange = ({ target }) => {
+  setUser({
+    ...user,
+    [target.name]: target.value,
+  });
+  
+};
+const ingresarUsuario = async () => {
+    const data = await getData(url)
+    const registro = data.some(ele => (ele.email ==[user.email]) && (ele.password ==[user.password]))
+    
+    console.log(registro)
+    // console.log(userlocal)
+    if(registro){
+      console.log('adentro')
+      
+      const tworeg = data.find(us => us.email === user.email)
+      const {id, email, name, tiempoestudio, respcontest, respcorrec, respincoimagen } = tworeg
+       
+      localStorage.setItem('User',JSON.stringify(tworeg))
+    
+    }
+    
+    
+}
+
+const handleSubmitUser = (e) =>{
+  e.preventDefault()
+}
 
 
 
@@ -51,14 +85,14 @@ function Login() {
       <ImgLogo src={Logo}></ImgLogo>
       <h1>Iniciar sesión<hr></hr></h1>
       
-        <form>
+        <form onSubmit={handleSubmitUser}>
             <Label>Correo electrónico</Label>
-            <Inputs type="email" name="correo" id="correo" placeholder='Ingrese su correo electronico'></Inputs>
+            <Inputs type="email" name="email" id="correo" placeholder='Ingrese su correo electronico' onChange={handleInputChange}></Inputs>
             <Label>Contraseña</Label>
-            <Inputs type="password" name="contrasena" id="contrasena" placeholder='Contraseña'></Inputs>
+            <Inputs type="password" name="password" id="contrasena" placeholder='Contraseña' onChange={handleInputChange}></Inputs>
            <br></br>
            <br></br>
-            <Button>Ingresar</Button>
+            <Button onClick={ingresarUsuario}>Ingresar</Button>
         </form>
         <br></br>
         <a>¿Se te olvido la contraseña?</a>

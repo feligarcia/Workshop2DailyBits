@@ -40,8 +40,8 @@ handleInputCHanged = ({target}) => {
 }
 
 async componentDidMount(){
-    const listadoData = await getData(url)
-    this.setState({Usuarios:listadoData})
+    const listadoUsuarios = await getData(url)
+    this.setState({Usuarios:listadoUsuarios})
     console.log(this.state)
 }
 
@@ -50,8 +50,8 @@ async componentDidMount(){
 handleSubmit = async (e) =>{
     e.preventDefault();
     await this.addData()
-    const listadoData = await getData(url)
-    this.setState({Usuarios:listadoData})
+    const listadoUsuarios = await getData(url)
+    this.setState({Usuarios:listadoUsuarios})
     console.log(this.state.Usuarios)
     
 }
