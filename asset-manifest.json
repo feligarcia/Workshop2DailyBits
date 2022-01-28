@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Workshop2DailyBits/static/css/main.0440f694.css",
+    "main.js": "/Workshop2DailyBits/static/js/main.38b14952.js",
+    "static/media/LogoXL.png": "/Workshop2DailyBits/static/media/LogoXL.7cd169fc57e99a45f8f3.png",
+    "static/media/css.png": "/Workshop2DailyBits/static/media/css.9e0ff2edb92cb4e33971.png",
+    "static/media/html5.png": "/Workshop2DailyBits/static/media/html5.3c003b9b005ee37d29c3.png",
+    "index.html": "/Workshop2DailyBits/index.html",
+    "main.0440f694.css.map": "/Workshop2DailyBits/static/css/main.0440f694.css.map",
+    "main.38b14952.js.map": "/Workshop2DailyBits/static/js/main.38b14952.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0440f694.css",
+    "static/js/main.38b14952.js"
+  ]
+}
