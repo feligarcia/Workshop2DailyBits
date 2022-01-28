@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Inicio from '../containers/Inicio';
 import Perfil from '../containers/Perfil';
 import ListCategorias from '../containers/ListCategorias';
+import Listatemas from '../components/Listatemas'
 
 
 
@@ -18,7 +19,8 @@ export const AppRouter = () => {
                 <Link className="link" to="/Login">Login |</Link>
                 <Link className="link" to="/CrearUsuario">Crear Usuario |</Link>
                 <Link className="link" to="/Perfil">Perfil |</Link>
-                <Link className="link" to="/Categorias">Categorias</Link>
+                <Link className="link" to="/Categorias">Categorias |</Link>
+               
                 
                 </nav>
                 <Routes>
@@ -27,6 +29,7 @@ export const AppRouter = () => {
                     <Route exact path="/" element={<Inicio/>}/>
                     <Route exact path="/Perfil" element={<Perfil/>}/>
                     <Route exact path="/Categorias" element={<ListCategorias/>}/>
+                    
 
                     
                 </Routes>

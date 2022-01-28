@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import imgprueba from '../assets/images/Logo.png'
 import axios from 'axios';
 import { url } from '../helpers/url';
+import Navinferior from '../components/Navinferior';
 
 
 export const DivUser = styled.div`
@@ -63,7 +64,7 @@ const cerrarSesion =()=>{
       <H2Sesion onClick={() => cerrarSesion()}>Cerrar Sesion</H2Sesion>
       <BtnDelete onClick={() => borrarUsuario(id)}>Eliminar usuario</BtnDelete>
     
-    <ListCategorias />
+    <Navinferior />
   </DivUser>);
 }
 
