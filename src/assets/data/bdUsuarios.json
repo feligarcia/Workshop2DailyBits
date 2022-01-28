@@ -1,0 +1,59 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Felipe",
+      "email": "pipe@garcia.com",
+      "password": "toyota",
+      "tiempoestudio": 124,
+      "respcontest": 6,
+      "respcorrec": 2,
+      "respinco": 4,
+      "imagen": "https://11uk91uj5h62os2u61c0s6o1-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/1.-SUPER-BLANCO.jpg"
+    },
+    {
+      "id": 2,
+      "name": "johana",
+      "email": "joha@garcia.com",
+      "password": "joha",
+      "tiempoestudio": 124,
+      "respcontest": 6,
+      "respcorrec": 2,
+      "respinco": 4,
+      "imagen": "https://11uk91uj5h62os2u61c0s6o1-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/1.-SUPER-BLANCO.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Jhon",
+      "email": "jhon@garcia.com",
+      "password": "jhon123",
+      "tiempoestudio": 124,
+      "respcontest": 6,
+      "respcorrec": 2,
+      "respinco": 4,
+      "imagen": "https://11uk91uj5h62os2u61c0s6o1-wpengine.netdna-ssl.com/wp-content/uploads/2020/08/1.-SUPER-BLANCO.jpg"
+    },
+    {
+      "name": "Diana",
+      "email": "or@garcia.com",
+      "password": "123",
+      "tiempoestudio": 0,
+      "respcontest": 0,
+      "respcorrec": 0,
+      "respinco": 0,
+      "imagen": "https://avatars.githubusercontent.com/u/89276262",
+      "id": 5
+    },
+    {
+      "name": "Martin",
+      "email": "entremigente@gmail.com",
+      "password": "Elias",
+      "tiempoestudio": 0,
+      "respcontest": 0,
+      "respcorrec": 0,
+      "respinco": 0,
+      "imagen": "diomedez papa",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export const url ='https://bdusuarioworkshop2.herokuapp.com/usuarios/'

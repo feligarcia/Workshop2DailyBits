@@ -2,9 +2,9 @@ import React from 'react';
 import vuelogo from '../assets/images/vuelogo.png'
 import styled from "styled-components";
 
-import './css-tmp.css'
 
-const CateNavbar = styled.nav`
+
+export const CateNavbar = styled.nav`
    display: flex;
    justify-content: space-between;
    align-items:flex-end;
@@ -12,19 +12,19 @@ const CateNavbar = styled.nav`
    padding: 1em;
    background-color: gray;
 `;
-const CateImg = styled.img`
+export const CateImg = styled.img`
    width: 50px;
    height: 50px;
    object-fit: cover;
 `;
-const CateDivLink = styled.img`
+export const CateDivLink = styled.div`
    background-color: gray;
 `;
-const JustifyContentCenterDiv = styled.div`
+export const JustifyContentCenterDiv = styled.div`
    display: block;
    text-align: center;
 `;
-const LinkNavbar = styled.a`
+export const LinkNavbar = styled.a`
    text-decoration: none;
    color: #fff;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -33,28 +33,29 @@ const LinkNavbar = styled.a`
 
 const ListCategorias = () => {
    return (
-
+      <>
+      <h1>Probando conexion</h1>
       <CateNavbar>
          <CateDivLink>
             <JustifyContentCenterDiv >
-               <CateImg src={vuelogo} alt='' />
+               <CateImg src={vuelogo} alt=''></CateImg>
                <a href="/">Home</a>
             </JustifyContentCenterDiv>
          </CateDivLink>
          <CateDivLink>
             <JustifyContentCenterDiv >
-               <CateImg src={vuelogo} alt='' />
+               <CateImg src={vuelogo} alt=''></CateImg>
                <a href="/">Estadísticas</a>
             </JustifyContentCenterDiv>
          </CateDivLink>
          <CateDivLink>
             <JustifyContentCenterDiv >
-               <CateImg src={vuelogo} alt='' />
+               <CateImg src={vuelogo} alt=''></CateImg>
                <a href="/">Perfil</a>
             </JustifyContentCenterDiv>
          </CateDivLink>
       </CateNavbar>
-
+      </>
    );
 };
 

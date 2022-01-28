@@ -1,10 +1,11 @@
 import Login from './containers/Login'
+import CrearUsuario from './containers/CrearUsuario';
 
 function App() {
   return (
-    <div className="App" id="drum-machine">
-      <h1>Prueba</h1>
-      <Login />
+    <div className="App">
+      {/* <Login /> */}
+      <CrearUsuario />
     </div>
   );
 }
